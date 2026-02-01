@@ -4,9 +4,7 @@ print(b[:5])
 print(b[2:])
 print(b[-5:-2])
 
-#b.strip
-#b.upper
-#b.lower
+
 print(b.replace("h","j"))
 
 age = 36

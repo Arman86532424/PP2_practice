@@ -8,6 +8,8 @@ bool([])
 if 5 > 2:
     print("5 is grater than 2")
 
+print(5/3)
+print(5//3)
 
 # / division (returns float)
 # // Floor devision (rounds down returns int)
