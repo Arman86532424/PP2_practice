@@ -1,0 +1,128 @@
+{
+  "store": {
+    "name": "Филиал ТОО EUROPHARMA Астана",
+    "bin": "080841000762"
+  },
+  "items": [
+    {
+      "line": 1,
+      "name": "Натрия хлорид 0,9%, 200 мл, фл",
+      "quantity": 2.0,
+      "unit_price": 154.0,
+      "subtotal": 308.0
+    },
+    {
+      "line": 2,
+      "name": "Борный спирт 3%, 20 мл, фл.",
+      "quantity": 1.0,
+      "unit_price": 51.0,
+      "subtotal": 51.0
+    },
+    {
+      "line": 3,
+      "name": "Шприц 2 мл, 3-х комп. (Bioject)",
+      "quantity": 2.0,
+      "unit_price": 16.0,
+      "subtotal": 32.0
+    },
+    {
+      "line": 4,
+      "name": "Система для инфузии Vogt Medical",
+      "quantity": 2.0,
+      "unit_price": 60.0,
+      "subtotal": 120.0
+    },
+    {
+      "line": 5,
+      "name": "Шприц 5 мл, 3-х комп.",
+      "quantity": 1.0,
+      "unit_price": 310.0,
+      "subtotal": 310.0
+    },
+    {
+      "line": 6,
+      "name": "AURA Ватные диски №150",
+      "quantity": 1.0,
+      "unit_price": 461.0,
+      "subtotal": 461.0
+    },
+    {
+      "line": 7,
+      "name": "Чистая линия скраб мягкий 50 мл",
+      "quantity": 1.0,
+      "unit_price": 381.0,
+      "subtotal": 381.0
+    },
+    {
+      "line": 8,
+      "name": "Чистая линия  скраб очищающийабрикос 50 мл",
+      "quantity": 1.0,
+      "unit_price": 386.0,
+      "subtotal": 386.0
+    },
+    {
+      "line": 9,
+      "name": "Чистая линия скраб мягкий 50 мл",
+      "quantity": 1.0,
+      "unit_price": 381.0,
+      "subtotal": 381.0
+    },
+    {
+      "line": 10,
+      "name": "Nivea шампунь 3в1мужской  400 мл",
+      "quantity": 1.0,
+      "unit_price": 414.0,
+      "subtotal": 414.0
+    },
+    {
+      "line": 11,
+      "name": "Pro Series Шампунь яркий цвет 500мл",
+      "quantity": 1.0,
+      "unit_price": 841.0,
+      "subtotal": 841.0
+    },
+    {
+      "line": 12,
+      "name": "Pro Series бальзам-ополаскивательдля длител ухода за окрашеннымиволосами Яркий цвет 500мл",
+      "quantity": 1.0,
+      "unit_price": 841.0,
+      "subtotal": 841.0
+    },
+    {
+      "line": 16,
+      "name": "Натрия хлорид 0,9%, 100 мл, фл.",
+      "quantity": 1.0,
+      "unit_price": 168.0,
+      "subtotal": 168.0
+    },
+    {
+      "line": 17,
+      "name": "Дисоль р-р 400 мл, фл.",
+      "quantity": 1.0,
+      "unit_price": 163.0,
+      "subtotal": 163.0
+    },
+    {
+      "line": 19,
+      "name": "Церукал 2%, 2 мл, №10, амп.",
+      "quantity": 2.0,
+      "unit_price": 396.0,
+      "subtotal": 792.0
+    }
+  ],
+  "totals": {
+    "total": 18009.0,
+    "vat_12_percent": 0.0,
+    "items_sum": 5649.0,
+    "difference": 12360.0
+  },
+  "payment": {
+    "method": "Банковская карта",
+    "amount": 18009.0
+  },
+  "metadata": {
+    "check_number": "2331180266",
+    "date": "18.04.2019",
+    "time": "11:13:58"
+  }
+}

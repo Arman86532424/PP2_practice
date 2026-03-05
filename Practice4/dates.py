@@ -21,7 +21,7 @@ now = now.strftime("%Y-%m-%d %H:%M:%S")
 print(now)
 
 #======================================================================================
-date1 = datetime.date(2007, 8, 2)
+date1 = datetime.date(2007, 2, 17)
 date2 = datetime.date(2007, 2, 18)
 
 diff = (abs(date2 - date1)).total_seconds()

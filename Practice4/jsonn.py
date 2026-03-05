@@ -1,7 +1,7 @@
 import json
 
 
-with open("sample-data.json", encoding="utf-8") as f:
+with open("sample-data.json") as f:
     data = json.load(f)
 
 print("Interface Status")
