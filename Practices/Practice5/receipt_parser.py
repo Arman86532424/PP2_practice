@@ -1,4 +1,4 @@
-# receipt_parser.py
+
 import re
 import json
 from decimal import Decimal
@@ -14,7 +14,7 @@ def parse_receipt(text: str) -> dict:
 
     lines = [line.rstrip() for line in text.splitlines()]
 
-    # Метаданные чека
+    
     for line in lines:
         line = line.strip()
         if "Филиал" in line and "ТОО" in line:
@@ -29,13 +29,13 @@ def parse_receipt(text: str) -> dict:
                 result["metadata"]["cash_register"] = parts[1]
                 result["metadata"]["shift"] = parts[3]
 
-    # Дата и время
+    
     dt_match = re.search(r'(\d{2}\.\d{2}\.\d{4})\s+(\d{2}:\d{2}:\d{2})', text)
     if dt_match:
         result["metadata"]["date"] = dt_match.group(1)
         result["metadata"]["time"] = dt_match.group(2)
 
-    # Товары
+    
     item_pattern = re.compile(
         r'^\s*(\d{1,2})\.\s+'
         r'(.+?)\s+'
@@ -51,10 +51,10 @@ def parse_receipt(text: str) -> dict:
     for m in item_pattern.finditer(text):
         num, name, qty, price, subtotal = m.groups()
 
-        # Убираем [RX]- если есть
+       
         name = name.replace('[RX]-', '').strip()
 
-        # Приводим числа к нормальному виду
+        
         qty = qty.replace(',', '.').strip()
         price = price.replace(',', '.').strip()
         subtotal = subtotal.replace(',', '.').strip()
@@ -74,7 +74,7 @@ def parse_receipt(text: str) -> dict:
 
     result["items"] = items
 
-    # Итог
+   
     total_match = re.search(r'ИТОГО:\s*([\d\s,.]+)', text)
     if total_match:
         total_str = total_match.group(1).replace(' ', '').replace(',', '.')
@@ -83,7 +83,7 @@ def parse_receipt(text: str) -> dict:
         except ValueError:
             result["totals"]["total"] = None
 
-    # НДС
+   
     nds_match = re.search(r'в т\.ч\. НДС 12%:\s*([\d\s,.]+)', text)
     if nds_match:
         nds_str = nds_match.group(1).replace(' ', '').replace(',', '.')
@@ -92,7 +92,7 @@ def parse_receipt(text: str) -> dict:
         except ValueError:
             result["totals"]["vat_12_percent"] = 0.0
 
-    # Способ оплаты
+    
     payment_block = False
     for line in lines:
         stripped = line.strip()
@@ -109,7 +109,7 @@ def parse_receipt(text: str) -> dict:
             payment_block = False
             break
 
-    # Сравнение сумм
+    
     if "total" in result["totals"] and result["totals"]["total"] is not None:
         official = Decimal(str(result["totals"]["total"]))
         diff = abs(official - total_from_items)
@@ -164,8 +164,6 @@ if __name__ == "__main__":
 
     print_receipt(parsed)
 
-    # Сохраняем в JSON
+   
     with open("parsed_receipt.json", "w", encoding="utf-8") as f:
         json.dump(parsed, f, ensure_ascii=False, indent=2)
-
-    print("\nРезультат также сохранён в parsed_receipt.json")
