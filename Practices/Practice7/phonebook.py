@@ -1,7 +1,7 @@
 import psycopg2
 import csv
 
-# ---------- CONNECTION ----------
+
 conn = psycopg2.connect(
     host="localhost",
     dbname="postgres",
@@ -15,7 +15,7 @@ cur = conn.cursor()
 def insert_from_csv(file_path):
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # skip header
+        next(reader)  
         
         data = []
         for row in reader:

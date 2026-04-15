@@ -15,7 +15,7 @@ cur = conn.cursor()
 def insert_from_csv(file_path):
     with open(file_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # skip header
+        next(reader)  
         
         data = []
         for row in reader:
@@ -114,6 +114,98 @@ def delete_contact():
 
     conn.commit()
     print("Deleted!")
+#=================================================================================================================================================
+def functions():
+    print("1 - search_phonebook")
+    print("2 - get_paginated")
+
+    choice = input("Choose: ")
+
+    if choice == "1":
+        
+        pattern = input("Enter search pattern: ")
+
+
+        cur.execute("SELECT * FROM search_phonebook(%s)", (pattern,))
+        rows = cur.fetchall()
+
+        for row in rows:
+            print(row)
+   
+
+    elif choice == "2":
+        
+        limit = int(input("Enter limit1: "))
+        page = int(input("Enter limit2: "))
+
+        offset = (page - 1) * limit
+
+        
+
+        cur.execute(
+            "SELECT * FROM get_paginated(%s, %s)",
+            (limit, offset)
+        )
+
+        rows = cur.fetchall()
+
+        for row in rows:
+            print(row)
+
+    
+ 
+
+    conn.commit()
+#==================================================================================================================================================
+def pro():
+    print("1 - upsert")
+    print("2 - insert many")
+    print("3 - delete user")
+
+    choice = input("Choose: ")
+
+    if choice == "1":
+        
+        
+        name = input("Enter name: ")
+        number = input("Enter phone: ")
+
+  
+
+        cur.execute("CALL upsert_user(%s, %s)", (name, number))
+        
+
+ 
+   
+
+    elif choice == "2":
+        
+        
+        names = input("Enter names : ").split(',')
+        numbers = input("Enter numbers : ").split(',')
+
+    
+        names = [n.strip() for n in names]
+        numbers = [n.strip() for n in numbers]
+
+ 
+
+        
+        for name, number in zip(names, numbers):
+            cur.execute("CALL upsert_user(%s, %s);", (name, number))
+                
+
+    elif choice == "3":
+       
+        value = input("Enter name or phone to delete: ")
+
+        cur.execute("CALL delete_user(%s)", (value,))
+
+    
+ 
+
+    conn.commit()
+    
 
 #====================================================================================================================================================
 def menu():
@@ -124,6 +216,8 @@ def menu():
         print("3 - Update contact")
         print("4 - Query contacts")
         print("5 - Delete contact")
+        print("6 - functions")
+        print("7 - procedures")
         print("0 - Exit")
 
         choice = input("Select: ")
@@ -138,6 +232,10 @@ def menu():
             query_contacts()
         elif choice == "5":
             delete_contact()
+        elif choice =="6":
+            functions()
+        elif choice == "7":
+            pro()
         elif choice == "0":
             break
 
