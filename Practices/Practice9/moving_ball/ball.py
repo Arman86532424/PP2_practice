@@ -15,12 +15,10 @@ class Ball:
         new_y = self.y + dy
 
        
-        if (new_x - self.radius >= 0 and 
-            new_x + self.radius <= self.screen_width):
+        if (new_x - self.radius >= 0 and new_x + self.radius <= self.screen_width):
             self.x = new_x
 
-        if (new_y - self.radius >= 0 and 
-            new_y + self.radius <= self.screen_height):
+        if (new_y - self.radius >= 0 and new_y + self.radius <= self.screen_height):
             self.y = new_y
 
     def draw(self, screen):

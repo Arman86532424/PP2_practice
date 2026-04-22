@@ -13,13 +13,11 @@ class MusicPlayer:
     def load_music(self):
         files = []
         for file in os.listdir(self.music_folder):
-            if file.endswith(".wav") or file.endswith(".mp3"):
-                files.append(os.path.join(self.music_folder, file))
+            files.append(os.path.join(self.music_folder, file))
         return files
 
     def play(self):
-        if not self.playlist:
-            return
+        
         
         pygame.mixer.music.load(self.playlist[self.current_index])
         pygame.mixer.music.play()
@@ -30,22 +28,17 @@ class MusicPlayer:
         self.is_playing = False
 
     def next_track(self):
-        if not self.playlist:
-            return
         
         self.current_index = (self.current_index + 1) % len(self.playlist)
         self.play()
 
     def previous_track(self):
-        if not self.playlist:
-            return
         
         self.current_index = (self.current_index - 1) % len(self.playlist)
         self.play()
 
     def get_current_track(self):
-        if not self.playlist:
-            return "No tracks"
+        
         return os.path.basename(self.playlist[self.current_index])
 
     def get_position(self):

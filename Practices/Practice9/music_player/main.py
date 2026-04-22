@@ -18,7 +18,7 @@ clock = pygame.time.Clock()
 running = True
 
 def draw():
-    screen.fill((30, 30, 30))
+    screen.fill((0, 0, 0))
 
     track_text = font.render(f"Track: {player.get_current_track()}", True, (255, 255, 255))
     screen.blit(track_text, (20, 50))
@@ -31,10 +31,10 @@ def draw():
     pos_text = font.render(f"Time: {position}s", True, (200, 200, 200))
     screen.blit(pos_text, (20, 150))
 
-    controls = font.render("P=Play S=Stop N=Next B=Back Q=Quit", True, (150, 150, 150))
+    controls = font.render("P S N B Q", True, (150, 150, 150))
     screen.blit(controls, (20, 220))
 
-    pygame.display.flip()
+    pygame.display.update()
 
 while running:
     for event in pygame.event.get():

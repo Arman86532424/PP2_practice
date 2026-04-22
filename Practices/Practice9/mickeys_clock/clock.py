@@ -21,13 +21,11 @@ class MickeyClock:
 
     def get_angles(self):
         now = datetime.datetime.now()
-
         seconds = now.second
         minutes = now.minute
 
-       
-        sec_angle = -seconds * 6     
-        min_angle = -minutes * 6
+        sec_angle = 90 - (seconds * 6)
+        min_angle = 90 - (minutes * 6) +18
 
         return min_angle, sec_angle
 

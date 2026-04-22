@@ -22,5 +22,5 @@ while True:
     mickey_clock.update()
     mickey_clock.draw(screen)
 
-    pygame.display.flip()
+    pygame.display.update()
     clock.tick(60)

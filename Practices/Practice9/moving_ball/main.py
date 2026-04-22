@@ -34,7 +34,7 @@ while running:
 
     ball.draw(screen)
 
-    pygame.display.flip()
+    pygame.display.update()
     clock.tick(60)  
 
 pygame.quit()
