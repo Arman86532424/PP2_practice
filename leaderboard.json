@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Aer",
+        "score": 760,
+        "distance": 5001
+    },
+    {
+        "name": "A",
+        "score": 30,
+        "distance": 369
+    },
+    {
+        "name": "ad",
+        "score": 30,
+        "distance": 513
+    },
+    {
+        "name": "A",
+        "score": 10,
+        "distance": 296
+    },
+    {
+        "name": "a",
+        "score": 0,
+        "distance": 129
+    },
+    {
+        "name": "d",
+        "score": 0,
+        "distance": 127
+    },
+    {
+        "name": "d",
+        "score": 0,
+        "distance": 129
+    },
+    {
+        "name": "A",
+        "score": 0,
+        "distance": 154
+    },
+    {
+        "name": "A",
+        "score": 0,
+        "distance": 154
+    },
+    {
+        "name": "A",
+        "score": 0,
+        "distance": 156
+    }
+]

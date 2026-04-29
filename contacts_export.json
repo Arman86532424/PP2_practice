@@ -1,0 +1,192 @@
+[
+    {
+        "name": "Kamila",
+        "email": "kamila@example.com",
+        "birthday": "1998-05-19",
+        "group": "Work",
+        "phones": [
+            "+7 702 888 9999:mobile"
+        ]
+    },
+    {
+        "name": "David",
+        "email": "david@example.com",
+        "birthday": "1989-03-22",
+        "group": "Work",
+        "phones": [
+            "+7 705 999 0001:work"
+        ]
+    },
+    {
+        "name": "ARRRRRRRR",
+        "email": "QWDQDQD@daw.com",
+        "birthday": "2007-09-09",
+        "group": "Work",
+        "phones": [
+            "+7789798797:work"
+        ]
+    },
+    {
+        "name": "Arman",
+        "email": "arman@example.com",
+        "birthday": "1991-04-18",
+        "group": "Family",
+        "phones": [
+            "+7 777 999 8888:home",
+            "+9999999999999999:mobile"
+        ]
+    },
+    {
+        "name": "Nurlan",
+        "email": "nurlan@example.com",
+        "birthday": "1986-10-25",
+        "group": "Work",
+        "phones": [
+            "+7 747 444 5566:work"
+        ]
+    },
+    {
+        "name": "Joseppe",
+        "email": "joseppe@example.com",
+        "birthday": "1979-12-05",
+        "group": "Other",
+        "phones": [
+            "+7 234 657 9754:home"
+        ]
+    },
+    {
+        "name": "Karina",
+        "email": "karina@example.com",
+        "birthday": "2000-12-12",
+        "group": "Friend",
+        "phones": [
+            "+7 705 111 2233:mobile"
+        ]
+    },
+    {
+        "name": "Aruzhan",
+        "email": "aruzhan@example.com",
+        "birthday": "2005-02-28",
+        "group": "Family",
+        "phones": [
+            "+7 700 888 1122:mobile"
+        ]
+    },
+    {
+        "name": "Ali",
+        "email": "ali@example.com",
+        "birthday": "1996-08-10",
+        "group": "Friend",
+        "phones": [
+            "+7 747 123 4567:mobile"
+        ]
+    },
+    {
+        "name": "Alina",
+        "email": "alina@example.com",
+        "birthday": "2001-08-21",
+        "group": "Friend",
+        "phones": [
+            "+7 747 555 4433:mobile"
+        ]
+    },
+    {
+        "name": "Ruslan",
+        "email": "ruslan@example.com",
+        "birthday": "1982-11-11",
+        "group": "Family",
+        "phones": [
+            "+7 701 777 6666:work"
+        ]
+    },
+    {
+        "name": "Elmira",
+        "email": "elmira@example.com",
+        "birthday": "1990-06-30",
+        "group": "Family",
+        "phones": [
+            "+7 777 777 7777:mobile"
+        ]
+    },
+    {
+        "name": "Sara",
+        "email": "sara@example.com",
+        "birthday": "2002-07-30",
+        "group": "Friend",
+        "phones": [
+            "+7 702 333 4455:mobile"
+        ]
+    },
+    {
+        "name": "Anna",
+        "email": "anna@example.com",
+        "birthday": "1999-11-20",
+        "group": "Friend",
+        "phones": [
+            "+7 777 111 2233:mobile"
+        ]
+    },
+    {
+        "name": "Marat",
+        "email": "marat@example.com",
+        "birthday": "1988-01-01",
+        "group": "Work",
+        "phones": [
+            "+7 700 111 9999:home"
+        ]
+    },
+    {
+        "name": "Zhandos",
+        "email": "zhandos@example.com",
+        "birthday": "1995-02-14",
+        "group": "Other",
+        "phones": [
+            "+7 705 222 1100:mobile"
+        ]
+    },
+    {
+        "name": "Timur",
+        "email": "timur@example.com",
+        "birthday": "1993-06-14",
+        "group": "Work",
+        "phones": [
+            "+7 701 222 3344:work"
+        ]
+    },
+    {
+        "name": "Mike",
+        "email": "mike@example.com",
+        "birthday": "1994-05-12",
+        "group": "Work",
+        "phones": [
+            "+7 775 233 2212:mobile"
+        ]
+    },
+    {
+        "name": "John",
+        "email": "john@example.com",
+        "birthday": "1984-01-15",
+        "group": "Family",
+        "phones": [
+            "+7 701 555 8899:work"
+        ]
+    },
+    {
+        "name": "Diana",
+        "email": "diana@example.com",
+        "birthday": "1997-09-03",
+        "group": "Friend",
+        "phones": [
+            "+7 702 555 6677:mobile"
+        ]
+    },
+    {
+        "name": "Asel",
+        "email": "asel@example.com",
+        "birthday": "2003-03-07",
+        "group": "Friend",
+        "phones": [
+            "+7 700 333 2211:mobile"
+        ]
+    }
+]

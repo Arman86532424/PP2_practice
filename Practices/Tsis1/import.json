@@ -1,0 +1,49 @@
+[
+    {
+        "name": "Dmitry",
+        "email": "dima_kz@mail.ru",
+        "birthday": "1992-03-15",
+        "group": "Work",
+        "phones": [
+            "+7 777 555 1122 (mobile)",
+            "8 727 333 4455 (work)"
+        ]
+    },
+    {
+        "name": "Elena",
+        "email": "elena_apple@gmail.com",
+        "birthday": "1995-07-20",
+        "group": "Family",
+        "phones": [
+            "+7 701 999 0011 (mobile)"
+        ]
+    },
+    {
+        "name": "Asset",
+        "email": "asset_pro@yahoo.com",
+        "birthday": "1988-12-05",
+        "group": "Friend",
+        "phones": [
+            "+7 707 123 4567 (mobile)",
+            "+7 702 444 5566 (home)"
+        ]
+    },
+    {
+        "name": "Unknown Person",
+        "email": "none@example.com",
+        "birthday": null,
+        "group": "Other",
+        "phones": [
+            "000-000-000 (home)"
+        ]
+    },
+    {
+        "name": "Arman",
+        "email": "assel_design@mail.kz",
+        "birthday": "2001-05-10",
+        "group": "Work",
+        "phones": [
+            "+7 700 333 2211 (mobile)"
+        ]
+    }
+]
